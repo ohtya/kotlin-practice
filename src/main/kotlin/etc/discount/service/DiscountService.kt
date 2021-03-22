@@ -13,7 +13,7 @@ interface DiscountService {
      * @param drive [Drive]
      * @return 割引率
      */
-    fun calculate(drive: Drive?): Long
+    fun calculate(drive: Drive): Long
 
     /**
      * 与えられた値を加算します(JUnit Sample)
