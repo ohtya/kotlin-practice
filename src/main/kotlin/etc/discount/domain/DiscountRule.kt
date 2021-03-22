@@ -19,12 +19,12 @@ interface DiscountRule {
      *
      * @return true: 可能, false: 不可
      */
-    fun isApplicable(drive: Drive?): Boolean
+    fun isApplicable(drive: Drive): Boolean
 
     /**
      * ルールを適用した場合の割引率を返す
      *
      * @return 割引率(0から100)
      */
-    fun discountRate(drive: Drive?): Long
+    fun discountRate(drive: Drive): Long
 }
